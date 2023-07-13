@@ -23,5 +23,3 @@ jobs:
       - uses: actions/checkout@latest
       - name: list files in repo
         run: tree
-  
-0    
