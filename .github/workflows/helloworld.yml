@@ -1,0 +1,20 @@
+name: My first workflow
+
+on: 
+  workflow_dispatch:
+    inputs:
+      name:
+        description: 'Who to greet'
+        required: true
+        default: 'World'
+    
+
+jobs:
+   helloworld: 
+      name: Hello world job
+      runs-on: ubuntu-latest
+      steps:
+        - name: Hello world step
+          run: |
+            echo 'Hello ${{ inputs.name }}'
+              
