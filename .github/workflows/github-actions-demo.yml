@@ -20,6 +20,6 @@ jobs:
         run: echo ${{ github.event_name }}
       - name: output branch
         run: echo ${{ github.ref }}
-      - uses: actions/checkout@latest
+      - uses: actions/checkout@v3
       - name: list files in repo
         run: tree
