@@ -11,9 +11,9 @@ on:
  workflow_dispatch:
     inputs:
         environment:
-        required: true
-        type: environment
-        description: Select the environment
+          description: 'Select an environment'
+          type: environment
+          required: true
    
  
 jobs:
